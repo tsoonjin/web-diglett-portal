@@ -1,19 +1,18 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import { VStack, Heading } from "@chakra-ui/react";
 import Link from "next/link";
 
 import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   return (
-    <Flex as="header" width="full" align="center">
-      <Heading as="h1" size="md">
-        <Link href="/">nextarter-chakra</Link>
+    <VStack>
+      <Heading as="h1" size="lg">
+        <Link href="/">Diglett</Link>
       </Heading>
-
-      <Box marginLeft="auto">
-        <ThemeToggle />
-      </Box>
-    </Flex>
+      <Heading as="h5" size="xs" color="gray.500">
+        Treasure trove of interesting images & videos
+      </Heading>
+    </VStack>
   );
 };
 
